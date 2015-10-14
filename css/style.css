@@ -1,0 +1,192 @@
+@font-face {
+    font-family: arizonia;
+    src: url(../fonts/Arizonia-Regular.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(../fonts/BEBAS___.ttf);
+}
+
+
+@font-face {
+    font-family: new cicle italic;
+    src: url(../fonts/New_Cicle_Semi_Italic.ttf);
+}
+
+@font-face {
+    font-family: new cicle;
+    src: url(../fonts/New_Cicle_Semi.ttf);
+}
+
+
+/* BUTTON */
+
+a#book {
+    padding: 50px;
+    font-size: 4em;
+    line-height: 100px;  
+}
+
+a[role="button"] {
+    font-family: bebas;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );    
+}
+
+a[role="button"]:hover, a[role="button"].selected {
+    background: crimson!important;
+}
+
+
+/* BACKGROUND */
+
+
+.bildeTo {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('../img/skiing.jpg');
+    background-size: cover;
+
+}
+
+
+#pageTwo {
+    background: #ddd;
+}
+
+.grey {
+    background-color: #f7f7f7;
+}
+
+.bildeEn {
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('../img/night.jpg');
+    background-size: cover;
+}
+
+.page {
+    background-color: white;
+}
+
+
+
+/* FONTS */
+
+
+
+h1, h2, h3, p, a, form, table {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.biggerFont {
+    font-size:150%;
+}
+
+.biggerFont2 {
+    font-size: 3em;
+}
+
+.fancy_text {
+    color: white;
+    font-family: arizonia;
+    text-shadow: 4px 1px 10px #4d4d4d; 
+}
+
+#submenu {
+    font-family: new cicle;
+}
+
+#submenu ul li a.selected {
+    font-weight: bold;
+}
+
+#submenu ul li a:hover, #submenu ul li a.selected {
+    border-bottom: 3px solid crimson;
+}
+
+
+#logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+#submenu li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* QUOTE */
+
+blockquote p em:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+    font-family: new cicle;
+}
+blockquote em {
+    font-family: new cicle italic;
+
+}
+
+
+section.room, form {
+    overflow: auto;
+    border: 1px solid #d4d4d4;    
+}
+
+section.room hr {
+    clear: both;
+}
+
+section.room .room-info {
+    width: 300px;
+    display: block;
+    float: left;
+}
+
+section.room .room-info li {
+    margin: 20px;
+    list-style:none;
+}
+
+section.room img {
+    float: left;
+    width: 400px;
+    height: 210px;
+    margin: 20px;
+}
+
+
+.book_button {
+    line-height: 30px;
+    width: auto;
+}
+
+.info {
+    text-align: justify;
+}

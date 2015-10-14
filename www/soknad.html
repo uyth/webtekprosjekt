@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/reset.css">        
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/parallax.css">        
+        <meta name="viewport" content="width=device-width">
+        <title>Booking</title>
+    </head>
+
+    <body class="bildeEn">
+
+        <header role="banner">
+            <div class="wrapper">
+                <h1 id="logo"><a href="index.html" class="fancy_text">Storstølen Fjellstugu</a></h1>
+                <nav id="menu">
+                    <ul>
+                        <li><a class="selected" role="button" href="booking.html">Booking</a></li>
+                        <li><a role="button" href="om.html">Om hotellet</a></li>
+                        <li><a role="button" href="aktiviteter.html">Aktiviteter</a></li>
+                        <li><a role="button" href="kontakt.html">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page">
+                <nav id="submenu">
+                    <ul>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a class="selected" href="#">Søknad</a></li>                    
+                    </ul>
+                </nav>                
+                <h2>Søknad om hytteutleie</h2>
+                <main>
+                    <div class="col2">
+                        <form>
+                            <ul>
+                                <li>
+                                    <label for="name" class="required">Navn: </label>
+                                    <input id="name" name="name" type="text" placeholder="Fornavn Etternavn" required>
+                                </li>
+                                <li>
+                                    <label for="email" class="required">E-postaddresse: </label>
+                                    <input id="email" name="email" type="email" placeholder="hello@example.com" required>
+                                </li>
+                                <li>
+                                    <label for="phone">Telefon: </label>
+                                    <input id="phone" name="phone" type="tel">
+                                </li>
+                                <li>
+                                    <label for="start_date" class="required">Fra: </label>
+                                    <input id="start_date" name="start_date" type="date" required>
+                                </li>
+                                <li>
+                                    <label for="end_date" class="required">Til: </label>
+                                    <input id="end_date" name="end_date" type="date" required>
+                                </li>
+                                <li>
+                                    <label for="room_type" class="required">Type rom: </label>
+                                    <select id="roomtype" name="guests[]" required>
+                                        <option value="1">2-roms</option>
+                                        <option value="2">3-roms</option>
+                                        <option value="3">4-roms</option>                                            
+                                    </select>
+                                </li>                                    
+                                <li>
+                                    <label for="guests" class="required">Antall gjester: </label>
+                                    <select id="guests" name="guests[]" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>                                            
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="comments">Kommentarer</label>
+                                    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Send inn" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </main> 
+                <aside>
+                    <div class="col1">
+                        <div class="info">
+                            <h3>Noe info</h3>
+                            <p>Mer info om noe og sikkert noe annet og enda mer.</p>
+                            <p>Bestill rom, vær så snill. Vi har så få gjester. plzz. Kom og bestill hytter hos oss, Storstølen Fjellstugu.</p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>

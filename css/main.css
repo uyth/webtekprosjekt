@@ -1,0 +1,308 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: none;
+}
+
+#logo {
+    float: left;
+    display: block;
+    margin: 50px 0 50px 0;
+    line-height: 50px;    
+}
+
+h2, h3 {
+    margin: 1em 0;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height:1.5em;
+}
+
+nav#menu {
+    float: right;
+    margin: 50px 0 50px 0;
+}
+
+nav#menu ul li {
+    float: left;
+    display: block;
+    list-style: none;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+nav#menu ul li a {
+    display: block;
+    width: 150px;
+    line-height: 50px;
+}
+
+header[role="banner"] {
+    overflow: hidden;
+    height: 150px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+
+.wrapper:after, .clearfix:after, #submenu ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.page {
+    padding: 50px;
+    overflow: auto;
+}
+
+#submenu li {
+    list-style: none;
+    float: left;
+}
+
+
+#submenu li:first-child:after {
+    content: '\00a0\00a0\00a0>\00a0\00a0\00a0';
+}
+
+#submenu ul li:after {
+    content: '\00a0\00a0\00a0';
+}
+
+main {
+    text-align: justify;
+}
+.col1, .col2 {
+    display: block;
+    float: left;
+}
+.col1 {
+    width: 300px;
+    margin: 0 0 0 50px;
+}
+.col2 {
+    width: 750px;
+    margin:0 0 0 0;
+}
+
+form li {
+    list-style: none;
+    display: block;
+    overflow: auto;
+    margin: 20px;
+}
+
+form li label, form li input, form li select {
+    float:left;
+}
+
+form li input, form li select {
+    width: 200px;
+}
+
+form li label {
+    width: 150px;
+}
+
+form li label, form li input, form li label, form li select, form li textarea {
+    padding: 5px;
+}
+
+
+#bilde {
+    width: 500px;
+    height: 400px;
+    margin: 0 0 20px 20px;
+    float: right;
+    background: #d7d7d7;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+}
+
+#contact-info {
+    width: 300px;
+}
+
+table {
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 1250px) {
+    
+    .wrapper {
+        max-width: 1000px;
+    }    
+    #logo, #menu {
+        margin: 10px!important;
+    }
+    
+    
+    #logo, nav#menu{
+        float: none;
+    }
+    #logo {
+        text-align: center;
+    }
+    nav#menu ul {
+        width: 700px;
+        overflow: auto;
+        margin: auto;
+    }
+    .col2 {
+        width: 450px;
+    }
+    
+    section.room .room-info {
+        width: 100%!important;
+    }
+    
+    .book_button {
+        width: auto;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    #submenu ul li:after {
+        content: ""!important;
+    }
+    
+    #submenu ul li {
+        list-style: none;
+        line-height: 50px;
+    }
+    #submenu ul li a {
+        color: black;
+        padding: 0 25px;
+        line-height: 50px;    
+        border-bottom: 1px solid #d4d4d4;
+        text-decoration: none;
+        display: block;
+    }
+    #submenu ul li a:hover, #submenu ul li a.selected {
+        border-bottom: 1px solid #d4d4d4!important;
+        color: crimson;
+    }    
+    #submenu ul li:first-child {
+        border-top: 1px solid #d4d4d4;
+    }
+    #submenu ul li {
+        float:none;
+    }
+    
+    
+    .hide, aside {
+        display: none;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    section.room, form {
+        border: 0!important;
+    }
+    
+    header[role="banner"] {
+        height:auto;
+    }
+    
+    .wrapper, .page, main, .col1, .col2, #menu, #submenu,  section.room img, section.room ul li, form, form li, form label  {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    
+    .wrapper, .col1, .col2, #submenu,  section.room img, label, select {
+        width: 100%!important;
+    }
+    
+    form label, form select, textarea {
+        float: left;
+    }
+
+    #submenu {
+        text-align: center;
+    }
+    #submenu li, #submenu li a, section.room, textarea, input  {
+        width: auto;
+    }
+    
+    #welcome {
+        display: none;
+    }
+    nav#menu ul, nav#menu ul li a, a#book {
+        width: auto;
+    }
+    .col1, .col2, nav#menu ul li {
+        float: none;
+    }            
+
+    #logo, nav#menu ul li, a#book {
+        margin: 10px!important;
+    }
+    .page {
+        padding: 20px!important;
+    }
+    section.room ul li {
+        margin: 10px 0!important;
+    }
+    
+    a#book{
+        font-size: 3em!important;
+        padding: 0;
+    }
+    .parallax_content {
+        position: absolute;
+        left: 0!important;
+        top: 50%!important;
+        -webkit-transform: translate(-50%, -50%)!important;
+        transform: translate(0, -50%)!important;
+        width: 100%;
+    }
+    
+    form input, form select, form textarea {
+        background-color: #f7f7f7;
+        border: 0;
+        padding: 5px 0!important;
+        width: 100%!important;
+    }
+    form li  {
+        margin: 10px 0!important;
+    }
+    input[type="submit"] {
+        background-color: grey;
+        color: white;
+        font-family: bebas;
+    }
+    input[type="submit"]:hover {
+        background-color: crimson;
+    }
+    
+    
+}
